@@ -63,7 +63,7 @@ pub struct LData {
 	pub active_power: f64,
 	/// Supported starting communication board version 2.474, VAR
 	pub reactive_power: f64,
-	pub cos_phi: f64,
+	pub cos_phi: Option<f64>,
 }
 
 #[derive(Debug, Deserialize)]

@@ -80,8 +80,8 @@ pub struct Telemetry {
 	pub total_energy: f64,
 	/// Celsius
 	pub temperature: f64,
-	pub inverter_mode: InverterMode,
-	pub operation_mode: OperationMode,
+	pub inverter_mode: Option<InverterMode>,
+	pub operation_mode: Option<OperationMode>,
 	#[serde(rename = "vL1ToN")]
 	pub v_l1_to_n: Option<f64>,
 	#[serde(rename = "vL2ToN")]

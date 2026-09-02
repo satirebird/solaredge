@@ -49,6 +49,7 @@ pub enum FilterSiteStatus {
 pub enum SiteStatus {
 	Active,
 	PendingCommunication,
+	Inactive,
 }
 
 #[derive(Copy, Clone, Debug, Deserialize, Serialize)]
